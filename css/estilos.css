@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* min-width: 62.5%;
+    width: 100%; */
+}
+
+body {
+    background: #E9EDF2;
+    font-family: 'jost', sans-serif;
+    color: #E9EDF2;
+}
+
+label {
+    color: #AD3036;
+}
+
+nav {
+    font-size: 25px;
+}
+
+footer {
+    background-color: #A7BDD9;
+    padding: 10px;
+    color: #142126;
+    text-align: center;
+    height: auto;
+    font-size: 0.7rem;
+}
+
+.submit {
+    font-size: 1rem;
+    background-color: #E9EDF2;
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-flex;
+    margin: 0 5px 10px 0;
+}
+
+.portada {
+    padding-top: 10px;
+}
+
+.vinos {
+    margin: 10px 0 0 0;
+    text-align: center;
+    padding: 10px;
+}
+
+.lista {
+    color: #142126;
+    text-align: center;
+    padding: 0 40px;
+    list-style-type: none;
+}
+
+.menu {
+    text-align: left;
+    background-color: #A7BDD9;
+    height: 140px;
+}
+
+.icono {
+    color: #142126;
+    font-size: 2.5rem;
+    margin: 80px;
+}
+
+.titulo a {
+    text-decoration: none;
+    color: #AD3036;
+    padding-left: 30px;
+}
+
+#Olvidaste {
+    text-decoration: none;
+    color: #142126;
+    font-weight: bold;
+}
+
+#mainCom {
+    padding-left: 30px;
+    margin: 10px 0;
+    background-color: #8fbfa441;
+    color: #142126;
+}
+
+#mainVinos {
+    background-color: #8fbfa441;
+    margin-bottom: 10px;
+}
+
+#somos {
+    background-color: #8fbfa441;
+    color: #142126;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin: -10px 0;
+}
+
+#nosotros {
+    width: 100%;
+    margin: 20px 0 10px 0;
+}
+
+#logo {
+    width: 12%;
+}
