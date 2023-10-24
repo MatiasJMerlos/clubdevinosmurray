@@ -28,39 +28,90 @@
     <main id="mainCom">
         <div>
             <br>
-            <h2>Mi cuenta</h2>
+            <h2>Inicia sesión</h2>
             <br>
-            <form action="link">
-                <label for="mail" aria-required="true">Mail: </label> <input type="email" name="mail"> <br><br>
-                <label for="password" aria-required="true">Contraseña: </label> <input type="password" name="password">
-                <a id="Olvidaste" href="index.html">Olvidaste tu contraseña</a><br><br>
-                <input class="submit" type="submit" value="Iniciar Sesión">
+            <form action="" class="formulario" id="formulario1">
+
+                <div class="grupo grupo-correcto grupo-incorrecto" id="grupo_mail">
+                    <label for="mail" class="formulario_label">Correo Electrónico: </label>
+                    <input type="email" name="mail" class="input" id="mail" placeholder="andy_murray@gmail.com">
+                </div>
+                <p class="input-error">No es un mail válido.</p>
+
+                <div class="grupo grupo-correcto grupo-incorrecto" id="grupo_password">
+                    <label for="password" aria-required="true" class="formulario_label">Contraseña: </label>
+                    <input type="password" name="password" class="input" id="password">
+                </div>
+                <p class="input-error">No es una contraseña válida.</p>
+
+                <a id="Olvidaste" href="index.html">Olvidaste tu contraseña</a>
+
+                <div class="mensaje" id="mensaje">
+                    <p><b>Error:</b> Por favor, rellenar todos los campos.</p>
+                </div>
+                <div class="grupo grupo-btn-enviar"></div>
+                <button class="btn" type="submit">Iniciar Sesión</button>
+
             </form>
+            <br><br>
+            <h2>O registrate y se parte de nuestra comunidad</h2>
             <br>
-            <h2>Registrate y se parte de nuestra comunidad</h2>
-            <br>
-            <form action="link">
-                <label for="firstname">Nombre: </label> <input type="text" name="firstname"> <br><br>
-                <label for="lastname">Apellido: </label> <input type="text" name="lastname"> <br><br>
-                <label for="birthdate">Fecha de nacimiento: </label> <input type="date" name="birthdate"><br><br>
-                <label for="mail" aria-required="true">Mail: </label> <input type="email" name="mail"> <br><br>
-                <label for="password" aria-required="true">Contraseña: </label> <input type="password" name="password">
-                <br><br>
-                <label for="password1" aria-required="true">Repite contraseña: </label> <input type="password"
-                    name="password1"> <br><br>
+            <form action="" class="formulario" id="formulario2">
+
+                <div class="grupo grupo-correcto grupo-incorrecto" id="nombre">
+                    <label for="firstname" class="formulario_label">Nombre: </label>
+                    <input type="text" name="firstname" class="input" id="firstname" placeholder="Andy">
+                </div>
+                <p class="input-error">No es un nombre válido.</p>
+
+                <div class="grupo grupo-correcto grupo-incorrecto" id="apellido">
+                    <label for="lastname" class="formulario_label">Apellido: </label>
+                    <input type="text" name="lastname" class="input" id="lastname" placeholder="Murray">
+                </div>
+                <p class="input-error">No es un nombre válido.</p>
+
+                <div class="grupo grupo-correcto grupo-incorrecto" id="birthdate">
+                    <label for="birthdate" class="formulario_label">Fecha de Nacimiento: </label>
+                    <input type="date" name="birthdate" class="input" id="fechaNac">
+                </div>
+                <p class="input-error">No es una fecha válida.</p>
+
+                <div class="grupo grupo-correcto grupo-incorrecto" id="grupo_mail">
+                    <label for="mail" class="formulario_label">Correo Electrónico: </label>
+                    <input type="email" name="mail" class="input" id="mail" placeholder="andy_murray@gmail.com">
+                </div>
+                <p class="input-error">No es un mail válido.</p>
+
+                <div class="grupo grupo-correcto grupo-incorrecto" id="grupo_password">
+                    <label for="password" aria-required="true" class="formulario_label">Contraseña: </label>
+                    <input type="password" name="password" class="input" id="password">
+                </div>
+                <p class="input-error">No es una contraseña válida.</p>
+
+                <div class="grupo grupo-correcto grupo-incorrecto" id="grupo_password1">
+                    <label for="password1" aria-required="true" class="formulario_label">Repetir Contraseña: </label>
+                    <input type="password" name="password1" class="input" id="password1">
+                </div>
+                <p class="input-error">No es una contraseña válida.</p>
+
                 <p>Tus vinos de preferencia: <br>
                     <input type="checkbox" name="preferencia" value="tinto"> Tintos
                     <input type="checkbox" name="preferencia" value="blanco"> Blancos
                     <input type="checkbox" name="preferencia" value="rosado"> Rosados
                 </p>
-                <br>
-                <input class="submit" type="submit" value="Registrate">
+
+                <div class="mensaje" id="mensaje">
+                    <p><b>Error!:</b> Por favor, completar todos los campos correctamente.</p>
+                </div>
+                <div class="grupo grupo-btn-enviar"></div>
+                <button class="btn" type="submit">Registrarse</button>
+                <p class="mensaje-exito" id="mensaje-exito">¡Formulario enviado!</p>
 
             </form>
             <br>
         </div>
-
     </main>
+    <script src="js/formulario.js"></script>
     <footer>
         <a class="icono" href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"
                 aria-hidden="true"></i></a>
