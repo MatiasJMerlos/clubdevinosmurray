@@ -30,83 +30,75 @@
             <br>
             <h2>Inicia sesión</h2>
             <br>
-            <form action="" class="formulario" id="formulario1">
+            <form action="" class="formularios" id="formulario">
 
-                <div class="grupo grupo-correcto grupo-incorrecto" id="grupo_mail">
-                    <label for="mail" class="formulario_label">Correo Electrónico: </label>
+                <div class="grupo " id="grupo_mail">
+                    <label for="mail" class="formulario_label">Correo Electrónico * </label>
                     <input type="email" name="mail" class="input" id="mail" placeholder="andy_murray@gmail.com">
-                </div>
                 <p class="input-error">No es un mail válido.</p>
-
-                <div class="grupo grupo-correcto grupo-incorrecto" id="grupo_password">
-                    <label for="password" aria-required="true" class="formulario_label">Contraseña: </label>
+                </div>
+                <div class="grupo" id="grupo_password">
+                    <label for="password" class="formulario_label">Contraseña * </label>
                     <input type="password" name="password" class="input" id="password">
-                </div>
                 <p class="input-error">No es una contraseña válida.</p>
-
-                <a id="Olvidaste" href="index.html">Olvidaste tu contraseña</a>
-
-                <div class="mensaje" id="mensaje">
-                    <p><b>Error:</b> Por favor, rellenar todos los campos.</p>
                 </div>
-                <div class="grupo grupo-btn-enviar"></div>
-                <button class="btn" type="submit">Iniciar Sesión</button>
-
+                <div>
+                <a id="Olvidaste" href="index.html">Olvidaste tu contraseña</a>
+                </div><br>
+                <div class="mensaje" id="mensaje">
+                    <p><b>Error!:</b> Por favor, completar todos los campos correctamente.</p>
+                </div>
+                <div class="grupo grupo-btn-enviar">
+                <button class="btn" type="submit">Iniciar Sesión</button><br>
+                <p class="mensaje-exito" id="mensaje-exito1">¡Sesión iniciada!</p>
+                </div><br>
+                <p class="campo_obli">* Campos obligatorios.</p>
             </form>
             <br><br>
             <h2>O registrate y se parte de nuestra comunidad</h2>
             <br>
-            <form action="" class="formulario" id="formulario2">
+            <form action="" class="formularios" id="formulario1">
 
-                <div class="grupo grupo-correcto grupo-incorrecto" id="nombre">
-                    <label for="firstname" class="formulario_label">Nombre: </label>
+                <div class="grupo" id="grupo_nombre">
+                    <label for="firstname" class="formulario_label">Nombre * </label>
                     <input type="text" name="firstname" class="input" id="firstname" placeholder="Andy">
-                </div>
                 <p class="input-error">No es un nombre válido.</p>
-
-                <div class="grupo grupo-correcto grupo-incorrecto" id="apellido">
-                    <label for="lastname" class="formulario_label">Apellido: </label>
+                </div>
+                <div class="grupo" id="grupo_apellido">
+                    <label for="lastname" class="formulario_label">Apellido * </label>
                     <input type="text" name="lastname" class="input" id="lastname" placeholder="Murray">
+                <p class="input-error">No es un apellido válido.</p>
                 </div>
-                <p class="input-error">No es un nombre válido.</p>
-
-                <div class="grupo grupo-correcto grupo-incorrecto" id="birthdate">
-                    <label for="birthdate" class="formulario_label">Fecha de Nacimiento: </label>
-                    <input type="date" name="birthdate" class="input" id="fechaNac">
-                </div>
-                <p class="input-error">No es una fecha válida.</p>
-
-                <div class="grupo grupo-correcto grupo-incorrecto" id="grupo_mail">
-                    <label for="mail" class="formulario_label">Correo Electrónico: </label>
-                    <input type="email" name="mail" class="input" id="mail" placeholder="andy_murray@gmail.com">
-                </div>
+                <div class="grupo" id="grupo_mail1">
+                    <label for="mail1" class="formulario_label">Correo Electrónico * </label>
+                    <input type="email" name="mail1" class="input" id="mail1" placeholder="andy_murray@gmail.com">
                 <p class="input-error">No es un mail válido.</p>
-
-                <div class="grupo grupo-correcto grupo-incorrecto" id="grupo_password">
-                    <label for="password" aria-required="true" class="formulario_label">Contraseña: </label>
-                    <input type="password" name="password" class="input" id="password">
                 </div>
-                <p class="input-error">No es una contraseña válida.</p>
-
-                <div class="grupo grupo-correcto grupo-incorrecto" id="grupo_password1">
-                    <label for="password1" aria-required="true" class="formulario_label">Repetir Contraseña: </label>
+                <div class="grupo" id="grupo_password1">
+                    <label for="password1" class="formulario_label">Contraseña * </label>
                     <input type="password" name="password1" class="input" id="password1">
-                </div>
                 <p class="input-error">No es una contraseña válida.</p>
-
+                </div>
+                <div class="grupo" id="grupo_password2">
+                    <label for="password2" class="formulario_label">Repetir Contraseña * </label>
+                    <input type="password" name="password2" class="input" id="password2">
+                <p class="input-error">Las contraseñas no coinciden.</p>
+                </div><br>
+                <div>
                 <p>Tus vinos de preferencia: <br>
                     <input type="checkbox" name="preferencia" value="tinto"> Tintos
                     <input type="checkbox" name="preferencia" value="blanco"> Blancos
                     <input type="checkbox" name="preferencia" value="rosado"> Rosados
                 </p>
-
-                <div class="mensaje" id="mensaje">
+                </div><br>
+                <div class="mensaje" id="mensaje1">
                     <p><b>Error!:</b> Por favor, completar todos los campos correctamente.</p>
                 </div>
-                <div class="grupo grupo-btn-enviar"></div>
-                <button class="btn" type="submit">Registrarse</button>
+                <div class="grupo grupo-btn-enviar">
+                <button class="btn" type="submit">Registrarse</button><br>
                 <p class="mensaje-exito" id="mensaje-exito">¡Formulario enviado!</p>
-
+                </div><br>
+                <p class="campo_obli">* Campos obligatorios.</p>
             </form>
             <br>
         </div>
