@@ -218,6 +218,17 @@ footer {
 .campo_obli {
     font-size: 14px;
 }
+
+.proximamente{
+    font-size: 300%;
+    color: black;
+    text-align: center;
+}
+
+.imagenVino{
+    width: 100%;
+}
+
 #Olvidaste {
     text-decoration: none;
     color: #142126;
@@ -257,6 +268,8 @@ footer {
     .boton {flex-basis: 5% ;}
     .pie {font-size: 12px;}
     .titulo {align-items: end;}
+    .proximamente {font-size: 100px; }
+    .imagenVino{width: 400px;}
     #logo {width: 300px;}
     #somos {font-size: 20px;}
 }
