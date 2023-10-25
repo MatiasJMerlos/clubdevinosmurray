@@ -20,17 +20,64 @@ nav {
 
 footer {
     background-color: #A7BDD9;
-    padding: 10px;
     color: #142126;
     text-align: center;
-    height: auto;
-    font-size: 0.7rem;
+    height: 100%;
+    font-size: 0;
 }
 
-.formulario{
+.container{
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:"encabezado encabezado encabezado"
+                        "contenido contenido contenido"
+                        "contenido contenido contenido"
+                        "contenido contenido contenido"
+                        "contenido contenido contenido"
+                        "pie pie pie";
+}
+
+.pie{
+    grid-area: pie;
+}
+
+.contenido{
+    grid-area: contenido;
+}
+
+.encabezado{
+    grid-area: encabezado;
+    background-color: #A7BDD9;
+    height: 100%;
+    width: 100%;
+}
+.titulo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 10px;
+}
+
+.boton{
+    width: 200px;
+    height: 80%;
+    text-align: center;
+    flex-grow: 1;
+    flex-basis: 100%;
+    padding: 10px;
+
+}
+
+.formularios{
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 10px;
 }
 
 .formulario_label{
@@ -69,13 +116,14 @@ footer {
 }
 
 .mensaje{
-    width: 450px;
+    width: 420px;
     height: 40px;
     line-height: 40px;
     background-color:#f66060;
-    padding: 0 15px;
+    padding:auto;
     border-radius: 3px;
     display: none;
+    margin: auto;
 }
 
 .mensaje-activo{
@@ -85,7 +133,7 @@ footer {
 .grupo-btn-enviar{
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: center;
     margin-top: 10px;
 }
 
@@ -156,22 +204,15 @@ footer {
     list-style-type: none;
 }
 
-.menu {
-    text-align: left;
-    background-color: #A7BDD9;
-    height: 140px;
-}
-
 .icono {
     color: #142126;
-    font-size: 2.5rem;
-    margin: 80px;
+    font-size: 20px;
+    margin: 50px;
 }
 
 .titulo a {
     text-decoration: none;
     color: #AD3036;
-    padding-left: 30px;
 }
 
 .campo_obli {
@@ -184,11 +225,10 @@ footer {
 }
 
 #mainCom {
-    padding-left: 70px;
     margin: 10px 0;
     background-color: #8fbfa441;
     color: #142126;
-}
+    text-align: center;}
 
 #mainVinos {
     background-color: #8fbfa441;
@@ -199,23 +239,24 @@ footer {
     background-color: #8fbfa441;
     color: #142126;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 14px;
     padding: 10px;
-    margin: -10px 0;
+    margin: -20px 0 20px 0;
 }
 
 #nosotros {
     width: 100%;
-    margin: 20px 0 10px 0;
 }
 
 #logo {
-    width: 40px;
-    min-width: 10%;
+    width: 250px;
 }
 
-@media screen and (max-width: 800px) {
-    .formulario{
-        grid-template-columns: 1fr;
-    }
+@media all and (min-width:1200px){
+    .iframe {width: 330px ;}
+    .boton {flex-basis: 5% ;}
+    .pie {font-size: 12px;}
+    .titulo {align-items: end;}
+    #logo {width: 300px;}
+    #somos {font-size: 20px;}
 }

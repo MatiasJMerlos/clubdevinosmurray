@@ -14,18 +14,17 @@
 </head>
 
 <body class="contenedor">
-    <header>
-        <div class="menu">
-            <nav class="titulo">
-                <a href="./index.html"><img id="logo" src="img/logo2.png" alt="logo murray"></a>
-                <a href="./vinos.html">Vinos </a>
-                <a href="./comunidad.html">Comunidad </a>
-                <a href="./tienda.html">Tienda </a>
-                <a href="./nosotros.html">Nosotros</a>
-            </nav>
-        </div>
+    <div class="container">
+    <header class="encabezado">
+        <nav class="titulo">
+            <div class="boton"><a href="./index.html"><img id="logo" src="img/logo2.png" alt="logo murray"></a></div>
+            <div class="boton"><a href="./vinos.html">Vinos </a></div>
+            <div class="boton"><a href="./comunidad.html">Comunidad </a></div>
+            <div class="boton"><a href="./tienda.html">Tienda </a></div>
+            <div class="boton"><a href="./nosotros.html">Nosotros</a></div>
+        </nav>
     </header>
-    <main id="mainCom">
+    <main class="contenido" id="mainCom">
         <div>
             <br>
             <h2>Inicia sesión</h2>
@@ -44,14 +43,14 @@
                 </div>
                 <div>
                 <a id="Olvidaste" href="index.html">Olvidaste tu contraseña</a>
-                </div><br>
+                </div>
                 <div class="mensaje" id="mensaje">
-                    <p><b>Error!:</b> Por favor, completar todos los campos correctamente.</p>
+                    <p><b>Error!:</b> Por favor, completar todos los campos.</p>
                 </div>
                 <div class="grupo grupo-btn-enviar">
                 <button class="btn" type="submit">Iniciar Sesión</button><br>
                 <p class="mensaje-exito" id="mensaje-exito1">¡Sesión iniciada!</p>
-                </div><br>
+                </div>
                 <p class="campo_obli">* Campos obligatorios.</p>
             </form>
             <br><br>
@@ -92,19 +91,19 @@
                 </p>
                 </div><br>
                 <div class="mensaje" id="mensaje1">
-                    <p><b>Error!:</b> Por favor, completar todos los campos correctamente.</p>
+                    <p><b>Error!:</b> Por favor, completar todos los campos.</p>
                 </div>
                 <div class="grupo grupo-btn-enviar">
                 <button class="btn" type="submit">Registrarse</button><br>
                 <p class="mensaje-exito" id="mensaje-exito">¡Formulario enviado!</p>
-                </div><br>
+                </div>
                 <p class="campo_obli">* Campos obligatorios.</p>
             </form>
             <br>
         </div>
     </main>
     <script src="js/formulario.js"></script>
-    <footer>
+    <footer class="pie">
         <a class="icono" href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"
                 aria-hidden="true"></i></a>
         <a class="icono" href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"
@@ -116,6 +115,7 @@
             LUCHA CONTRA EL ALCOHOLISMO NRO. 24.788. COPYRIGHT 2023 PUBLIREVISTAS S.A. | Todos los derechos reservados |
             términos y condiciones - Dirección General de Defensa y Protección al Consumidor</p>
     </footer>
+    </div>
 </body>
 
 
