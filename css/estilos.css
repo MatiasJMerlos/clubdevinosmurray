@@ -260,3 +260,7 @@ footer {
     #logo {width: 300px;}
     #somos {font-size: 20px;}
 }
+
+.animate__animated.animate__fadeIn {
+    --animate-duration: 5s;
+}
